@@ -1,0 +1,315 @@
+html {
+  font-family: 'Chakra Petch', sans-serif;
+  color:white;
+  overflow-x: hidden;
+  background: url(../images/backgrounds/Background-Finish-line.png);
+}
+
+/* nav */
+
+nav {
+  background-color: hsl(0, 100%, 50%);
+}
+
+.logo {
+  width: 10%;
+  margin: 0 auto; 
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.logo img {
+  transition-duration: 1s;
+}
+
+.logo img:hover {
+  background-image: url(../images/logo/download.png); 
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1s;
+  transform:scale(110%);
+}
+
+/* grid 1 */
+
+.grid-1-background {
+  background-image: url(../images/backgrounds/Track.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  height: 100vh;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-rows: 12fr;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  margin-left: 3rem;
+  gap: 2rem;
+}
+
+.grid-1-text {
+  text-shadow: 2px 2px 2px rgb(61, 15, 15);
+  font-size: large;
+}
+
+.grid-1-text h1{
+  margin-bottom: 1rem;
+}
+
+.grid-1-text p {
+  line-height: 2rem;
+}
+
+.floating-mario {
+  margin-top: 4rem;
+  width: 50%; 
+  animation: floating 4s linear infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(3%);
+  }
+
+  50% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(3%);
+  }
+}
+
+/* main */
+
+main h1 {
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.button-lees-meer{
+  margin-top: 4rem;
+  border-radius: 1rem;
+  background-color: hsl(80, 61%, 50%);
+  padding: 0.5rem;
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  transition-duration: 0.7s;
+}
+
+.button-lees-meer p {
+  text-decoration: none;
+}
+
+.button-lees-meer:hover {
+  transition-duration: 0.7s;
+  background-color: hsl(0, 100%, 27%);
+}
+
+/* grid 2*/
+
+.grid-2 {
+  background-color: hsl(0, 0%, 50%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  border: 10px solid hsl(0, 0%, 0%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 0.5fr 0.5fr;
+  margin-top: 3rem;
+  max-width: 50rem;
+  margin-bottom: -10rem;
+  column-gap: 5rem;
+}
+
+/* sets */
+
+.mario-set{
+  height: 30vh;
+  background-image: url(../images/characters/Mario/Mario-set\ .png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+
+.mario-set:hover{
+  background-image: url(../images/characters/Mario/Mario-open-set.png);
+  transition-duration: 0.5s;
+  transform: rotateY(180deg);
+}
+
+.luigi-set {
+  height: 30vh;
+  background-image: url(../images/characters/Luigi/Luigi-set.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+
+.luigi-set:hover {
+  background-image: url(../images/characters/Luigi/Luigi-open-set.png);
+  transition-duration: 0.5s;
+  transform: rotateY(180deg);
+}
+
+/* buttons */
+
+.button-koop {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(80, 61%, 50%);
+  padding: 1rem; 
+  display: flex;
+  width:fit-content;
+  transition-duration: 0.4s; 
+
+}
+
+.button-koop a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.button-koop img{
+  height: 3vh;
+  padding-left: 3px;
+}
+
+.button-koop:hover {
+  background-color: hsl(0, 100%, 27%);
+  transform: translate(30px);
+  transition-duration: 0.4s; 
+}
+
+/* price */
+
+.price {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+/* driving animation */
+
+.mario-kart img, .luigi-kart img {
+  width: 15%;
+}
+
+.mario-kart {
+  animation: mario 10s linear infinite;
+  margin-top: 12rem;
+}
+
+@keyframes mario {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+.luigi-kart {
+  transform: rotate(20deg);
+  animation: luigi 10s linear infinite; 
+  margin-bottom: -3rem;
+}
+
+@keyframes luigi {
+    0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+/* media queries */
+
+@media (min-width: 0px) {
+
+  .grid-1-text h1, main h1 {
+    font-size: 0.5rem;
+  }
+
+  .grid-1-text p {
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+  }
+
+  .button-lees-meer {
+    margin-top: 1.5rem;
+  }
+
+  main h1 {
+    margin-top: -38rem;
+  }
+}
+
+@media (min-width: 500px) {
+
+    .grid-1-text h1, main h1 {
+    font-size: 0.8rem;
+    padding-top: 3rem;
+  }
+
+  .grid-1-text p {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  .button-lees-meer {
+    margin-top: 1.5rem;
+  }
+
+  main h1 {
+    margin-top: -29rem;
+  }
+
+}
+
+@media (min-width: 750px) {
+
+  .grid-1-text h1, main h1 {
+    font-size: 1rem;
+  }
+
+  .grid-1-text p {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  main h1 {
+    margin-top: -18.5rem;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .grid-1-text h1, main h1 {
+    font-size: 1.75rem;
+  }
+
+  .grid-1-text p {
+    font-size: 1.25rem; 
+    line-height: 2rem;
+  }
+
+  .button-lees-meer {
+    margin-top: 7rem;
+    padding: 1rem;
+  }
+
+  main h1 {
+    margin-top: -10rem;
+  }
+
+}
+
