@@ -29,14 +29,16 @@
         .cocktailglass{
             position: absolute;
             top: 110vh;
-            height: 30vw;
+            width: 30vw;
             left: -60%;
+            z-index: 100;
         }
         .straw{
-            position:absolute;
+            position: absolute;
             top: 110vh;
-            height: 30%;
+            width: 30vw;
             right: -60%;
+            z-index: 100;
         }
         .cocktail-bg{
             background-image: url(../images/cocktail/cocktail-bg.png);
@@ -49,8 +51,15 @@
             z-index: -10;
         }
     }
-    .volcano{
-        .volcano-bg{
+    .vulcano{
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            z-index: 100;
+        }
+        .vulcano-bg{
             background-image: url(../images/vulcano/vulcano-bg.png);
             background-repeat: no-repeat;
             background-position: bottom;
@@ -67,7 +76,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 37%; 
+            height: 45%; 
             width: 100%;
             z-index: 20;
         }
@@ -78,16 +87,6 @@
             height: 100%;
             width: 150%;
             z-index: 200;
-        }
-        h2 {
-            text-decoration: dashed;
-            color: #FFC300;
-            text-shadow: 0 0 3px rgba(0,0,0,.5);
-            text-align: center;
-            padding-top: 4rem;
-            font-size: xxx-large;
-            position: relative;
-            z-index: 100;
         }
         .beach-bg{
             background-image: url(../images/beach/beach-bg.png);
