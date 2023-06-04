@@ -1,0 +1,18 @@
+#christinaharud p {
+  color: red;
+  height: 100vh;
+}
+#christinaharud p:first-of-type {
+  width: 20vw;
+  padding: 2rem;
+}
+#christinaharud h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+#christinaharud .beach {
+  background-image: url(../images/beach/beach-animation-1.jpeg);
+  z-index: 100;
+}/*# sourceMappingURL=chriharu.css.map */
