@@ -4,9 +4,28 @@ function chriharu(fase){
 
     if(!section.init) {
         section.init = true;
-        //eigen animatie schrijven
         section.tl
         .add("cocktail")
+        .to("#chriharu .box", {
+            borderRadius: "20%",
+            rotation: 360,
+            backgroundColor: "#BDEAF5",
+            opacity: 0.8,
+            duration: 2,
+        },"cocktail")
+        .to("#chriharu .cocktailglass", {
+            scale: 1,
+            x: "0vw",
+            y: "0vh",
+            duration: 4, 
+            
+        }, "cocktail")
+        .to("#chriharu .straw", {
+            scale: 1,
+            x: "0vw",
+            y: "0vh",
+            duration: 4, 
+        }, "cocktail")
         .add("sun")
         .to("#chriharu .box", {
             borderRadius: "50%",
@@ -17,12 +36,12 @@ function chriharu(fase){
             top: "calc (50vh-20vw)",
             width: "30vw",
             height: "30vw",
-            duration: 5, //hoogte van content = duur van de tijdlijn (binnen section sections maken). Aantal adds komen niet perse overeen met aantal sections
+            duration: 5, 
         },"sun")
         .to(".waterdrops", {
             opacity: 0,
         }, "sun")
-        .add("jellyfish")
+        .add("turtle")
         .to("#chriharu .box", {
             borderRadius: "51% 49% 50% 50% / 100% 100% 0% 0% ",
             opacity: 0.8,
@@ -33,7 +52,7 @@ function chriharu(fase){
             height: "20vh",
             duration: 5,
             boxShadow: "none",
-        }, "jellyfish")
+        }, "turtle")
         .from ("#chriharu .waterdrops", {
             opacity: 1,
             duration: 3,
