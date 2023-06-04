@@ -26,7 +26,7 @@
 #chriharu .cocktail .cocktailglass {
   position: absolute;
   top: 110vh;
-  height: 30%;
+  height: 30vw;
   left: -60%;
 }
 #chriharu .cocktail .straw {

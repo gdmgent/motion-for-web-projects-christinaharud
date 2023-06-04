@@ -14,18 +14,15 @@ function chriharu(fase){
             duration: 2,
         },"cocktail")
         .to("#chriharu .cocktailglass", {
-            scale: 1,
-            x: "0vw",
-            y: "0vh",
             duration: 4, 
-            
+            left: "calc(50vw - 15vw)",
         }, "cocktail")
         .to("#chriharu .straw", {
-            scale: 1,
-            x: "0vw",
-            y: "0vh",
+            left: "calc(50vw - 15vw)",
             duration: 4, 
         }, "cocktail")
+        .add("volcano")
+        .to("#chriharu .")
         .add("sun")
         .to("#chriharu .box", {
             borderRadius: "50%",
