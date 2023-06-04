@@ -6,6 +6,7 @@ function chriharu(fase){
         section.init = true;
         //eigen animatie schrijven
         section.tl
+        .add("cocktail")
         .add("sun")
         .to("#chriharu .box", {
             borderRadius: "50%",

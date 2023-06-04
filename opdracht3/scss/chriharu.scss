@@ -7,6 +7,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        z-index: 2;
         .schildpad-hoofd {
             img {
                 position: absolute;
@@ -18,10 +19,31 @@
         }
         .schildpad-ledematen{
             position: absolute;
-            width: 120%;
-            bottom: -77%;
-            left: -10%;
-            transform:rotate(180deg);
+            width: 120vw;
+            height: 10vh;
+        }
+    }
+    .cocktail{
+        .cocktail-bg{
+            background-image: url(../images/cocktail/flower-background.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            height: 205vh;
+            z-index: -10;
+        }
+    }
+    .volcano{
+        .volcano-bg{
+            background-image: url(../images/vulcano/VULKAAN.png);
+            background-repeat: no-repeat;
+            background-position: center top 5%;
+            position: relative;
+            background-size: cover;
+            height: 100vh;
+            z-index: -10;
+            margin-top: -1rem;
         }
     }
     .beach{
@@ -57,24 +79,22 @@
             background-position: center center;
             position: absolute;
             width: 100%; 
-            height: 100%;
+            height: 100vh;
             background-size: cover;
             z-index: -10;
             top: 0; 
         }
     }
-
     .underwater {
         .underwater-bg { 
             background-image: url(../images/underwater/blended-water.png);
             background-repeat: no-repeat;
             background-position: center top 5%;
-            position: absolute;
+            position: relative;
             background-size: cover;
-            height: 205vh;
+            height: 300vh;
             width: 100%;
             z-index: -10;
-            top: 0; 
             margin-top: -1rem;
         }
         .fish {
@@ -87,28 +107,24 @@
             height: 100%;
             .swim-to-left{
             object-fit: contain;
-            object-position: left center;
-            width: 100%;
-            height: 10%;
-            animation: swim-to-right 2s linear infinite; 
+            animation: swim-to-left 2s linear infinite; 
+            height: 5%;
             }
             .swim-to-right{
                 object-fit: contain;
-                height: 10%;
-                width: 100%;
-                animation: swim-to-left 2s linear infinite;
+                animation: swim-to-right 2s linear infinite;
+                height: 5%;
             }
-            @keyframes swim-to-right{ /* aanpassen naar left*/
+            @keyframes swim-to-left{ 
                 0% {
                     transform: translateX(100%);
 
                 }
                 100% {
-                    transform: translateX(-100%);
-                    transform: rotate(-20deg);
+                    transform: translateX(-100%) rotate(-20deg);
                 }
             }
-            @keyframes swim-to-left {
+            @keyframes swim-to-right {
                 0% {
                     transform: translateX(-100%);
                 }
@@ -119,16 +135,26 @@
         }
     }
     .turtle-land {
+        h1 {
+            font-size: 4rem;
+            font-weight: 200;
+            color: rgb(192, 239, 254);
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+            text-align: center;
+            position: absolute;
+            z-index: 100;
+            top: 20%;
+            left: 35%;
+        }
         .turtle-land-bg {
              background-image: url(../images/extra/Turtle-land.png);
              background-repeat: no-repeat;
-             background-position: center top 5%;
-             position: absolute;
+             background-position: center right;
+             position: relative;
              background-size: cover;
              width: 100%;
-             height: 100vh;
-             z-index: -10;
-             top: 0; 
+             height: 130vh;
+             z-index: 1;
              margin-top: -1rem;
         }
     }
