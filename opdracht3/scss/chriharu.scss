@@ -25,20 +25,20 @@
     }
     .cocktail{
         .cocktail-bg{
-            background-image: url(../images/cocktail/flower-background.png);
+            background-image: url(../images/cocktail/cocktail-bg.png);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: bottom;
             position: relative;
             background-size: cover;
-            height: 205vh;
+            height: 500vh;
             z-index: -10;
         }
     }
     .volcano{
         .volcano-bg{
-            background-image: url(../images/vulcano/VULKAAN.png);
+            background-image: url(../images/vulcano/vulcano-bg.png);
             background-repeat: no-repeat;
-            background-position: center top 5%;
+            background-position: bottom;
             position: relative;
             background-size: cover;
             height: 100vh;
@@ -74,7 +74,7 @@
             z-index: 100;
         }
         .beach-bg{
-            background-image: url(../images/beach/beach-animation-5.webp);
+            background-image: url(../images/beach/beach-bg.png);
             background-repeat: no-repeat;
             background-position: center center;
             position: absolute;
